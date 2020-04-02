@@ -1,0 +1,31 @@
+#header {
+    background:#10284e;
+}
+
+#header a:link,
+#header a:visited{
+    color: #79aec8;
+}
+#header a:hover{
+    color: #fff;
+}
+.module caption,
+.inline-group h2{
+    background: #66ff66;
+}
+a.section:link,
+a.section:visited{
+    color:#000033;
+}
+div.breadcrumbs {
+    background: #66ff66;
+    color:#000033;
+}
+div.breadcrumbs a:link,
+div.breadcrumbs a:visited {
+    color:#000033;
+}
+#changelist-filter h2{
+    background: #66ff66;
+    color:#000033;
+}

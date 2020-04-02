@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTRE Base</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Light box -->
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+</head>
+<body>
+    <!-- TopBar -->
+    {% include 'partials/_topbar.html' %}
+    <!-- NavBar -->
+    {% include 'partials/_navbar.html' %}
+    {% block content %}
+    {% endblock %}
+    <!-- Footer -->
+    {% include 'partials/_footer.html' %}
+</body>
+<script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
+<script src="{% static 'js/main.js' %} "></script>
+<script src="{% static 'js/lightbox.min.js' %} "></script>
+</html>
