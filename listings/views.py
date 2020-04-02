@@ -3,8 +3,8 @@ from .models import Listing
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def index(request):
-    listings = Listing.objects.all()
-    paginator = Paginator(listings, 3)
+    listings = Listing.objects.order_by('-list_date').filter(is_published=True)
+    paginator = Paginator(listings, 6)
     page = request.GET.get('page')
     page_listings = paginator.get_page(page)
     context = {
