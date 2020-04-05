@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'realtors.apps.RealtorsConfig',
     'accounts.apps.AccountsConfig',
     'django.contrib.humanize',
+    'contacts.apps.ContactsConfig',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,13 @@ MEDIA_URL = '/media/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+#Email config
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'inha07111999@gmail.com'
+EMAIL_HOST_PASSWORD = 'inhageroy07'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
