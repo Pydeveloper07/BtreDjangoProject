@@ -33,8 +33,8 @@ def inquiry(request):
         send_mail(
             'Property Listing Inquiry',
             'There has just been an inquiry for ' + listing + '. Sign in to admin page to get more info.',
-            'inha07111999@gmail.com',
-            [realtor_email, 'oybek03071999@gmail.com'],
+            'host_email_address',
+            [realtor_email, 'email_address_you_wanna_send_to'],
             fail_silently=False,
         )
 
